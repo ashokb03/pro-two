@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title> Add Amount </title>
+
+    <style>
+
+        .box{
+            background-color: white;
+            height: 60vh;
+            width: 70vh;
+            border-radius: 15px;
+            position: absolute;
+            top:20%;
+            left:34%;
+        }
+
+
+        .box h1{
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .card{
+            text-align: center;
+            margin-top: 11%;
+        }
+
+
+        form input{
+            font-size: 18px;
+            padding: 5px;
+            border: 2px navy solid;
+
+        }
+
+        form button{
+            margin-top: 10%;
+            color:white;
+            font-size: 17px;
+            border:none;
+            border-radius: 5px;
+            background: navy;
+            height: 35px;
+            width: 100px;
+            
+        }
+
+        .a{
+            text-align: center;
+            font-size: 25px;
+            margin-top: 21%;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body style="background: navy">
+
+    <div class="container box">
+
+        <h1><span style="color: navy;">Credit</span> <b>+</b></h1>
+
+        <div class="card">
+
+            <form>
+
+                <input type="number" placeholder="Enter Amount" id="+"/>
+
+                <button onclick="crd()">Click</button><br><br>
+
+            </form>
+
+                
+        </div>
+
+        <div class="a">
+
+            <a style="text-decoration: none;" href="home.html" > <i style="color:navy" class="fa-solid fa-chevron-left"></i> </a>
+
+        </div>
+
+    </div>
+
+    <!-- js -->
+
+
+    <script>
+
+    function crd(){
+        
+        const Amount=45000;
+
+        let x=document.getElementById("+").value;
+
+        let xValue=parseInt(x);
+
+        const res=(Amount+xValue);
+
+        alert("Added Amount : "+res);
+
+    }
+
+
+    </script>
+
+
+</body>
+
+</html>
